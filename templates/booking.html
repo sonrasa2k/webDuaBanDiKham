@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt Lịch Dịch Vụ Dẫn Đi Khám</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="./static/css/navbar.css">
+  <link rel="stylesheet" href="./static/css/booking.css">
+  <link rel="stylesheet" href="./static/css/footer.css">
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<section class="page-header">
+  <div class="container">
+    <h1 class="animate-up">Đặt Lịch Dịch Vụ Dẫn Đi Khám</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+        <li class="breadcrumb-item active">Đặt Lịch</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="booking-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="booking-container">
+          <div class="booking-header">
+            <h2>Đặt Dịch Vụ Người Dẫn Đi Khám</h2>
+          </div>
+
+          <ul class="booking-steps">
+            <li class="booking-step active" id="step-1">
+              <span class="step-number">1</span>
+              <span class="step-text">Thông tin bệnh nhân</span>
+            </li>
+            <li class="booking-step" id="step-2">
+              <span class="step-number">2</span>
+              <span class="step-text">Chọn dịch vụ</span>
+            </li>
+            <li class="booking-step" id="step-3">
+              <span class="step-number">3</span>
+              <span class="step-text">Thời gian & địa điểm</span>
+            </li>
+            <li class="booking-step" id="step-4">
+              <span class="step-number">4</span>
+              <span class="step-text">Xác nhận</span>
+            </li>
+          </ul>
+
+          <div class="booking-body">
+            <!-- Step 1: Patient Information -->
+            <div class="booking-step-content" id="step-content-1">
+              <h3 class="mb-4">Thông Tin Bệnh Nhân</h3>
+              <form id="patient-form">
+                <div class="row mb-4">
+                  <div class="col-md-4 mb-3">
+                    <div class="patient-type-card selected" data-type="self">
+                      <div class="patient-type-icon"><i class="fas fa-user"></i></div>
+                      <div class="patient-type-name">Bệnh nhân là tôi</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="patient-type-card" data-type="relative">
+                      <div class="patient-type-icon"><i class="fas fa-user-friends"></i></div>
+                      <div class="patient-type-name">Người thân</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="patient-type-card" data-type="corporate">
+                      <div class="patient-type-icon"><i class="fas fa-user-tie"></i></div>
+                      <div class="patient-type-name">Khách hàng doanh nghiệp</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="fullName" class="form-label">Họ và tên <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="fullName" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="phone" class="form-label">Số điện thoại <span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control" id="phone" required>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="dob" class="form-label">Ngày sinh</label>
+                    <input type="text" class="form-control datepicker" id="dob">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="gender" class="form-label">Giới tính</label>
+                    <select class="form-select" id="gender">
+                      <option value="">Chọn giới tính</option>
+                      <option value="male">Nam</option>
+                      <option value="female">Nữ</option>
+                      <option value="other">Khác</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="idNumber" class="form-label">CMND/CCCD</label>
+                    <input type="text" class="form-control" id="idNumber">
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="condition" class="form-label">Tình trạng sức khỏe</label>
+                  <textarea class="form-control" id="condition" rows="3"></textarea>
+                </div>
+
+                <div class="d-flex justify-content-end mt-4">
+                  <button type="button" class="btn btn-primary next-step" data-next="2">Tiếp theo</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Step 2: Service Selection -->
+            <div class="booking-step-content d-none" id="step-content-2">
+              <h3 class="mb-4">Chọn Dịch Vụ Hỗ Trợ</h3>
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="service-card selected" data-service="basic" data-price="300000">
+                    <div class="service-name">Dịch vụ cơ bản</div>
+                    <div class="service-desc">Đưa đón, hướng dẫn thủ tục</div>
+                    <div class="service-price">300,000đ/ngày</div>
+                  </div>
+
+                  <div class="service-card" data-service="premium" data-price="500000">
+                    <div class="service-name">Dịch vụ cao cấp</div>
+                    <div class="service-desc">Bao gồm dịch vụ cơ bản + tư vấn</div>
+                    <div class="service-price">500,000đ/ngày</div>
+                  </div>
+
+                  <div class="service-card" data-service="elderly" data-price="400000">
+                    <div class="service-name">Hỗ trợ người già</div>
+                    <div class="service-desc">Chăm sóc đặc biệt cho người cao tuổi</div>
+                    <div class="service-price">400,000đ/ngày</div>
+                  </div>
+
+                  <div class="d-flex justify-content-between mt-4">
+                    <button type="button" class="btn btn-outline-secondary prev-step" data-prev="1">Quay lại</button>
+                    <button type="button" class="btn btn-primary next-step" data-next="3">Tiếp theo</button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="booking-summary">
+                    <div class="summary-title">Tóm tắt đơn đặt</div>
+                    <div class="summary-item">
+                      <span class="summary-label">Họ tên:</span>
+                      <span class="summary-value" id="summary-name">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">SĐT:</span>
+                      <span class="summary-value" id="summary-phone">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">Tình trạng:</span>
+                      <span class="summary-value" id="summary-condition">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">Dịch vụ:</span>
+                      <span class="summary-value" id="summary-service-step2">-</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Date & Location -->
+            <div class="booking-step-content d-none" id="step-content-3">
+              <h3 class="mb-4">Thời Gian & Địa Điểm</h3>
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="mb-4">
+                    <label for="appointment-date" class="form-label">Ngày bắt đầu <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control datepicker" id="appointment-date" required
+                           data-date-format="dd/mm/yyyy" autocomplete="off">
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="days-count" class="form-label">Số ngày cần hỗ trợ <span class="text-danger">*</span></label>
+                    <select class="form-select" id="days-count" required>
+                      <option value="" disabled selected>Chọn số ngày</option>
+                      <option value="1">1 ngày</option>
+                      <option value="2">2 ngày</option>
+                      <option value="3">3 ngày</option>
+                      <option value="4">4 ngày</option>
+                      <option value="5">5 ngày</option>
+                      <option value="6">6 ngày</option>
+                      <option value="7">7 ngày</option>
+                    </select>
+                    <small class="text-muted">Chọn số ngày bạn cần hỗ trợ dẫn đi khám</small>
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="hospital" class="form-label">Bệnh viện <span class="text-danger">*</span></label>
+                    <select class="form-select" id="hospital" required>
+                      <option value="" disabled selected>Chọn bệnh viện</option>
+                      <option value="Bệnh viện Đại học Y Dược">Đại học Y Dược</option>
+                      <option value="Bệnh viện Chợ Rẫy">Chợ Rẫy</option>
+                      <option value="Bệnh viện Nhi Đồng">Nhi Đồng</option>
+                      <option value="Bệnh viện Phạm Ngọc Thạch">Phạm Ngọc Thạch</option>
+                      <option value="other">Khác</option>
+                    </select>
+                  </div>
+
+                  <div id="other-hospital-container" class="mb-4 d-none">
+                    <label for="other-hospital" class="form-label">Tên bệnh viện <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="other-hospital">
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="address" class="form-label">Địa chỉ đón <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="address" rows="2" required></textarea>
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="note" class="form-label">Ghi chú</label>
+                    <textarea class="form-control" id="note" rows="2"></textarea>
+                  </div>
+
+                  <div class="d-flex justify-content-between mt-4">
+                    <button type="button" class="btn btn-outline-secondary prev-step" data-prev="2">Quay lại</button>
+                    <button type="button" class="btn btn-primary next-step" data-next="4">Tiếp theo</button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="booking-summary">
+                    <div class="summary-title">Tóm tắt</div>
+                    <div class="summary-item">
+                      <span class="summary-label">Họ tên:</span>
+                      <span class="summary-value" id="summary-name-step3">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">Dịch vụ:</span>
+                      <span class="summary-value" id="summary-service">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">Ngày bắt đầu:</span>
+                      <span class="summary-value" id="summary-date">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">Số ngày:</span>
+                      <span class="summary-value" id="summary-days-count">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">Bệnh viện:</span>
+                      <span class="summary-value" id="summary-location">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">Phí dịch vụ:</span>
+                      <span class="summary-value" id="summary-price">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <span class="summary-label">Tổng cộng:</span>
+                      <span class="summary-value total-price" id="summary-total">-</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4: Confirmation -->
+            <div class="booking-step-content d-none" id="step-content-4">
+              <div class="text-center">
+                <div class="confirmation-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 class="mb-3">Đặt Lịch Thành Công!</h3>
+                <p class="mb-4">Chúng tôi sẽ liên hệ với bạn để xác nhận.</p>
+
+                <div class="row justify-content-center mb-4">
+                  <div class="col-md-8">
+                    <div class="booking-summary">
+                      <div class="summary-title">Thông tin đặt lịch</div>
+                      <div class="summary-item">
+                        <span class="summary-label">Mã đặt lịch:</span>
+                        <span class="summary-value" id="booking-code">-</span>
+                      </div>
+                      <div class="summary-item">
+                        <span class="summary-label">Họ tên:</span>
+                        <span class="summary-value" id="confirm-name">-</span>
+                      </div>
+                      <div class="summary-item">
+                        <span class="summary-label">Số điện thoại:</span>
+                        <span class="summary-value" id="confirm-phone">-</span>
+                      </div>
+                      <div class="summary-item">
+                        <span class="summary-label">Dịch vụ:</span>
+                        <span class="summary-value" id="confirm-service">-</span>
+                      </div>
+                      <div class="summary-item">
+                        <span class="summary-label">Ngày bắt đầu:</span>
+                        <span class="summary-value" id="confirm-date">-</span>
+                      </div>
+                      <div class="summary-item">
+                        <span class="summary-label">Số ngày:</span>
+                        <span class="summary-value" id="confirm-days-count">-</span>
+                      </div>
+                      <div class="summary-item">
+                        <span class="summary-label">Bệnh viện:</span>
+                        <span class="summary-value" id="confirm-location">-</span>
+                      </div>
+                      <div class="summary-item">
+                        <span class="summary-label">Địa chỉ đón:</span>
+                        <span class="summary-value" id="confirm-address">-</span>
+                      </div>
+                      <div class="summary-item">
+                        <span class="summary-label">Tổng cộng:</span>
+                        <span class="summary-value" id="confirm-total">-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <a href="index.html" class="btn btn-primary me-3">
+                    <i class="fas fa-home me-2"></i>Trang chủ
+                  </a>
+                  <button id="print-btn" class="btn btn-outline-secondary">
+                    <i class="fas fa-print me-2"></i>In thông tin
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.vi.min.js"></script>
+<script src="./static/js/navbar.js"></script>
+<script src="./static/js/booking.js"></script>
+<script src="./static/js/footer.js"></script>
+<script src="./static/js/main.js" type="module"></script>
+<script src="./static/js/contact-popup-all.js"></script>
+
+</body>
+</html>
