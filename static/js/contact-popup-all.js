@@ -5,7 +5,7 @@
   style.textContent = `
     /* contact-popup.css */
 :root {
-  --primary-color: #0068d6;
+  --primary-color: #0a3a6c;
   --messenger-color: #0084FF;
   --zalo-color: #0068FF;
 }
