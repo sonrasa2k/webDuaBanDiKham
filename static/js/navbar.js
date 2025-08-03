@@ -8,6 +8,7 @@ function getCurrentPage() {
   if (path.includes('contact')) return 'contact';
   return '';
 }
+
 export function renderNavbar(currentPage = getCurrentPage()) {
   const pages = {
     'home': { href: '/', text: 'Trang Chủ' },
@@ -30,7 +31,8 @@ export function renderNavbar(currentPage = getCurrentPage()) {
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <i class="fas fa-hand-holding-heart"></i> Đưa Bạn Đi Khám
+          <img src="/static/images/logo.png" alt="Đưa Bạn Đi Khám" class="navbar-logo">
+          <span class="brand-text">Đưa Bạn Đi Khám</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -47,7 +49,7 @@ export function renderNavbar(currentPage = getCurrentPage()) {
 
 export function setupNavbar() {
   // Navbar scroll effect
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
@@ -56,3 +58,4 @@ export function setupNavbar() {
     }
   });
 }
+

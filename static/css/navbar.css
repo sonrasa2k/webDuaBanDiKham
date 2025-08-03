@@ -36,3 +36,18 @@
   color: var(--primary-color) !important;
   background-color: rgba(0, 104, 214, 0.1);
 }
+.navbar-logo {
+  height: 40px; /* Điều chỉnh chiều cao phù hợp */
+  margin-right: 10px;
+}
+
+.brand-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Hoặc nếu bạn muốn logo và text nằm trên cùng một dòng */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
