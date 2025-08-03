@@ -32,7 +32,7 @@ export function renderNavbar(currentPage = getCurrentPage()) {
       <div class="container">
         <a class="navbar-brand" href="/">
           <img src="/static/images/logo.png" alt="Đưa Bạn Đi Khám" class="navbar-logo">
-          <span class="brand-text">Đưa Bạn Đi Khám</span>
+          <span class="brand-text">ĐƯA BẠN ĐI KHÁM</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
