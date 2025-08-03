@@ -10,7 +10,7 @@ export function renderFooter() {
           <div class="col-lg-4">
             <div class="footer-brand">
               <a href="/" class="footer-logo">
-                <i class="fas fa-hand-holding-heart"></i>
+                 <img src="/static/images/logo.png" alt="Đưa Bạn Đi Khám" class="navbar-logo">
                 <span>Đưa Bạn Đi Khám</span>
               </a>
               <p class="footer-about">
