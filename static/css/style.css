@@ -70,5 +70,8 @@
   font-size: 15px;    /* đổi tùy ý */
   font-weight: bold;  /* đậm */
 }
+  .feature-dis{
+    font-size: 12px;
+  }
 
 }
