@@ -23,9 +23,8 @@ export function renderAboutContent() {
           </div>
           <div class="col-lg-6 animate-up animate-delay-1">
             <h2 class="section-title text-start">Câu Chuyện Của Chúng Tôi</h2>
-            <p>"Đưa Bạn Đi Khám" được thành lập năm 2020 với sứ mệnh giúp đỡ những người gặp khó khăn khi phải tự mình trải qua các thủ tục y tế phức tạp tại bệnh viện.</p>
+            <p>"Đưa Bạn Đi Khám" được thành lập với sứ mệnh giúp đỡ những người gặp khó khăn khi phải tự mình trải qua các thủ tục y tế phức tạp tại bệnh viện.</p>
             <p>Xuất phát từ chính trải nghiệm cá nhân khi chứng kiến người thân gặp khó khăn trong quá trình khám chữa bệnh, chúng tôi đã nung nấu ý tưởng tạo ra một dịch vụ hỗ trợ toàn diện cho bệnh nhân.</p>
-            <p>Qua 3 năm phát triển, chúng tôi tự hào đã đồng hành cùng hơn 5,000 bệnh nhân, giúp họ có trải nghiệm khám chữa bệnh nhẹ nhàng và hiệu quả hơn.</p>
           </div>
         </div>
       </div>
@@ -47,7 +46,7 @@ export function renderAboutContent() {
                 <i class="fas fa-bullseye"></i>
               </div>
               <h3>Sứ Mệnh</h3>
-              <p>Mang lại trải nghiệm khám chữa bệnh nhẹ nhàng, thuận tiện cho mọi bệnh nhân, đặc biệt là người cao tuổi, người khuyết tật và người từ tỉnh xa đến thành phố khám bệnh.</p>
+              <p>Tận tâm như người nhà.</p>
             </div>
           </div>
           <div class="col-md-6 mb-4 animate-up animate-delay-1">
@@ -56,7 +55,7 @@ export function renderAboutContent() {
                 <i class="fas fa-eye"></i>
               </div>
               <h3>Tầm Nhìn</h3>
-              <p>Trở thành hệ thống hỗ trợ y tế hàng đầu Việt Nam, mở rộng dịch vụ đến tất cả các bệnh viện lớn trên cả nước, góp phần giảm tải cho hệ thống y tế.</p>
+              <p>Trở thành hương hiệu uy tín số 1 - mang lại sự tin tưởng cho khách hàng.</p>
             </div>
           </div>
         </div>
@@ -89,10 +88,10 @@ export function renderAboutContent() {
           </div>
           <div class="col-lg-3 col-md-6 mb-4 animate-up animate-delay-1">
             <div class="team-card">
-              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Trần Thị B" class="team-img">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Nguyễn Ngọc Thắng" class="team-img">
               <div class="team-info">
-                <h4>Trần Thị B</h4>
-                <p>Trưởng phòng dịch vụ</p>
+                <h4>Nguyễn Ngọc Thắng</h4>
+                <p>CEO</p>
                 <div class="team-social">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
