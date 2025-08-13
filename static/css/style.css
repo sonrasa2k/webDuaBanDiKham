@@ -65,3 +65,10 @@
   font-size: 20px;    /* đổi tùy ý */
   font-weight: bold;  /* đậm */
 }
+@media (max-width: 1368px) {
+  .feature-title {
+  font-size: 15px;    /* đổi tùy ý */
+  font-weight: bold;  /* đậm */
+}
+
+}
