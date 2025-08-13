@@ -1,0 +1,49 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Giữ nguyên tỉ lệ, không crop, không zoom quá */
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  background: black; /* Đệm nền nếu video không phủ kín */
+}
+.hero-btn {
+  position: absolute;
+  top: 20px;   /* khoảng cách từ trên xuống */
+  left: 20px;  /* khoảng cách từ trái vào */
+  z-index: 2;
+
+  background-color: #007bff; /* nền xanh */
+  color: #fff;               /* chữ trắng */
+  padding: 0.75rem 1.25rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #0056b3; /* xanh đậm hơn khi hover */
+}
+
+/* Mobile tối ưu */
+@media (max-width: 576px) {
+  .hero-btn {
+    top: env(safe-area-inset-top, 12px);
+    left: env(safe-area-inset-left, 12px);
+    font-size: 1rem;
+    padding: .6rem 1rem;
+  }
+}

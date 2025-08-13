@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./static/css/navbar.css">
   <link rel="stylesheet" href="./static/css/footer.css">
+  <link rel="stylesheet" href="./static/css/style.css">
 
   <style>
     :root {
@@ -423,20 +424,15 @@
 
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <h1 class="animate__animated animate__fadeInDown">Đồng Hành Cùng Bạn Trên Hành Trình Sức Khỏe</h1>
-          <p class="animate__animated animate__fadeIn animate__delay-1s">Dịch vụ hỗ trợ y tế tận tâm - Giúp bạn tiết kiệm thời gian và giảm căng thẳng khi khám chữa bệnh</p>
-          <div class="animate__animated animate__fadeIn animate__delay-2s">
-            <a href="/booking" class="btn btn-primary btn-lg">Đặt Lịch Ngay</a>
-            <a href="#services" class="btn btn-outline-light btn-lg">Tìm Hiểu Thêm</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="hero">
+  <!-- Video Background -->
+  <!-- Nút đặt lịch -->
+<!--  <a href="/booking" class="btn btn-primary btn-lg hero-btn">Đặt Lịch Ngay</a>-->
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="{{ url_for('static', filename='videos/clip_ve_chung_toi.mp4') }}" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video nền.
+  </video>
+</section>
 
   <!-- Dịch vụ -->
   <section class="py-5" id="services">

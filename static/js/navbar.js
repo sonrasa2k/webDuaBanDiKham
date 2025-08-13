@@ -14,7 +14,7 @@ export function renderNavbar(currentPage = getCurrentPage()) {
     'home': { href: '/', text: 'TRANG CHỦ' },
     'booking': { href: '/booking', text: 'ĐẶT LỊCH' },
     'services': { href: '/services', text: 'DỊCH VỤ' },
-    'about': { href: '/about', text: 'VỀ CHUNG TÔI' },
+    'about': { href: '/about', text: 'VỀ CHÚNG TÔI' },
     'contact': { href: '/contact', text: 'LIÊN HỆ' }
   };
 
