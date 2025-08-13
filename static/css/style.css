@@ -47,3 +47,21 @@
     padding: .6rem 1rem;
   }
 }
+.feature-icon-text {
+  display: flex;
+  align-items: center;  /* canh icon và chữ thẳng hàng */
+  gap: 10px;            /* khoảng cách giữa icon và chữ */
+}
+
+.feature-icon-text i {
+  font-size: 40px;      /* chỉnh kích thước icon */
+  color: #0a3a6c;       /* màu icon */
+}
+
+.feature-icon-text h4 {
+  margin: 0;            /* bỏ khoảng trắng thừa */
+}
+.feature-title {
+  font-size: 20px;    /* đổi tùy ý */
+  font-weight: bold;  /* đậm */
+}
