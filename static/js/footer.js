@@ -51,8 +51,6 @@ export function renderFooter() {
                   <li><a href="#">Hướng dẫn quy trình</a></li>
                   <li><a href="#">Đặt lịch hẹn bác sĩ</a></li>
                   <li><a href="#">Hỗ trợ người cao tuổi</a></li>
-                  <li><a href="#">Tư vấn y tế từ xa</a></li>
-                  <li><a href="#">Xét nghiệm tại nhà</a></li>
                 </ul>
               </div>
               
@@ -60,8 +58,6 @@ export function renderFooter() {
                 <h5 class="footer-heading">Thông tin</h5>
                 <ul class="footer-links">
                   <li><a href="#">Về chúng tôi</a></li>
-                  <li><a href="#">Đội ngũ bác sĩ</a></li>
-                  <li><a href="#">Bệnh viện đối tác</a></li>
                   <li><a href="#">Câu hỏi thường gặp</a></li>
                   <li><a href="#">Chính sách bảo mật</a></li>
                 </ul>
@@ -88,13 +84,6 @@ export function renderFooter() {
                     <i class="fas fa-envelope contact-icon"></i>
                     <div class="contact-text-footer">
                       <a href="mailto:lienhe@duubandikham.vn">lienhe@duubandikham.vn</a>
-                    </div>
-                  </div>
-                  
-                  <div class="contact-item-footer">
-                    <i class="fas fa-clock contact-icon"></i>
-                    <div class="contact-text-footer">
-                      Thứ 2 - Thứ 7: 7:00 - 19:00
                     </div>
                   </div>
                 </div>
