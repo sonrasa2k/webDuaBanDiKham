@@ -11,11 +11,11 @@ function getCurrentPage() {
 
 export function renderNavbar(currentPage = getCurrentPage()) {
   const pages = {
-    'home': { href: '/', text: 'Trang Chủ' },
-    'booking': { href: '/booking', text: 'Đặt Lịch' },
-    'services': { href: '/services', text: 'Dịch Vụ' },
-    'about': { href: '/about', text: 'Về Chúng Tôi' },
-    'contact': { href: '/contact', text: 'Liên Hệ' }
+    'home': { href: '/', text: 'TRANG CHỦ' },
+    'booking': { href: '/booking', text: 'ĐẶT LỊCH' },
+    'services': { href: '/services', text: 'DỊCH VỤ' },
+    'about': { href: '/about', text: 'VỀ CHUNG TÔI' },
+    'contact': { href: '/contact', text: 'LIÊN HỆ' }
   };
 
   const navItems = Object.entries(pages).map(([key, page]) => {
