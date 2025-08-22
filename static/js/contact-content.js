@@ -85,14 +85,7 @@ export function renderContactContent() {
     </section>
 
     <section class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.123456789!2d106.6723456!3d10.XXXXXX!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xabcdef1234567890!2s15%20Vo%20Van%20Kiet%2C%20Binh%20Phu%2C%20Quan%208%2C%20HCMC!5e0!3m2!1sen!2s!4v0000000000000"
-        width="100%" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy"
-      ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.08335515441!2d106.62172972675495!3d10.72805421008065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752d55d146b0c3%3A0xe9a03dbd3ae7bf44!2sCity%20gate%20Towers!5e0!3m2!1sen!2s!4v1755885380370!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   `;
 }
