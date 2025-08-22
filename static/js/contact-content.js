@@ -45,14 +45,14 @@ export function renderContactContent() {
                 <i class="fas fa-map-marker-alt"></i>
                 <div>
                   <h5>Địa Chỉ</h5>
-                  <p>123 Nguyễn Văn Cừ, Quận 5, TP.HCM</p>
+                  <p>15 Võ Văn Kiệt, Phường Bình Phú,HCM</p>
                 </div>
               </div>
               <div class="contact-info-item">
                 <i class="fas fa-phone-alt"></i>
                 <div>
                   <h5>Điện Thoại</h5>
-                  <p><a href="tel:0123456789">0123 456 789</a></p>
+                  <p><a href="tel:+84899692207">+84 899 692 207</a></p>
                 </div>
               </div>
               <div class="contact-info-item">
