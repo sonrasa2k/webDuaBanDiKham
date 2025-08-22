@@ -62,75 +62,75 @@ export function renderAboutContent() {
       </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-lg-8 text-center">
-            <h2 class="section-title animate-up">Đội Ngũ Của Chúng Tôi</h2>
-            <p class="animate-up animate-delay-1">Những con người tận tâm đằng sau dịch vụ</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mb-4 animate-up">
-            <div class="team-card">
-              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Nguyễn Văn A" class="team-img">
-              <div class="team-info">
-                <h4>Nguyễn Văn A</h4>
-                <p>Giám đốc điều hành</p>
-                <div class="team-social">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 animate-up animate-delay-1">
-            <div class="team-card">
-              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Nguyễn Ngọc Thắng" class="team-img">
-              <div class="team-info">
-                <h4>Nguyễn Ngọc Thắng</h4>
-                <p>CEO</p>
-                <div class="team-social">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 animate-up animate-delay-2">
-            <div class="team-card">
-              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Lê Văn C" class="team-img">
-              <div class="team-info">
-                <h4>Lê Văn C</h4>
-                <p>Chuyên viên đào tạo</p>
-                <div class="team-social">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 animate-up animate-delay-3">
-            <div class="team-card">
-              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Phạm Thị D" class="team-img">
-              <div class="team-info">
-                <h4>Phạm Thị D</h4>
-                <p>Chuyên viên hỗ trợ</p>
-                <div class="team-social">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!--    &lt;!&ndash; Team Section &ndash;&gt;-->
+<!--    <section class="team-section">-->
+<!--      <div class="container">-->
+<!--        <div class="row justify-content-center mb-5">-->
+<!--          <div class="col-lg-8 text-center">-->
+<!--            <h2 class="section-title animate-up">Đội Ngũ Của Chúng Tôi</h2>-->
+<!--            <p class="animate-up animate-delay-1">Những con người tận tâm đằng sau dịch vụ</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--          <div class="col-lg-3 col-md-6 mb-4 animate-up">-->
+<!--            <div class="team-card">-->
+<!--              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Nguyễn Văn A" class="team-img">-->
+<!--              <div class="team-info">-->
+<!--                <h4>Nguyễn Văn A</h4>-->
+<!--                <p>Giám đốc điều hành</p>-->
+<!--                <div class="team-social">-->
+<!--                  <a href="#"><i class="fab fa-facebook-f"></i></a>-->
+<!--                  <a href="#"><i class="fab fa-linkedin-in"></i></a>-->
+<!--                  <a href="#"><i class="fab fa-twitter"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-6 mb-4 animate-up animate-delay-1">-->
+<!--            <div class="team-card">-->
+<!--              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Nguyễn Ngọc Thắng" class="team-img">-->
+<!--              <div class="team-info">-->
+<!--                <h4>Nguyễn Ngọc Thắng</h4>-->
+<!--                <p>CEO</p>-->
+<!--                <div class="team-social">-->
+<!--                  <a href="#"><i class="fab fa-facebook-f"></i></a>-->
+<!--                  <a href="#"><i class="fab fa-linkedin-in"></i></a>-->
+<!--                  <a href="#"><i class="fab fa-twitter"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-6 mb-4 animate-up animate-delay-2">-->
+<!--            <div class="team-card">-->
+<!--              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Lê Văn C" class="team-img">-->
+<!--              <div class="team-info">-->
+<!--                <h4>Lê Văn C</h4>-->
+<!--                <p>Chuyên viên đào tạo</p>-->
+<!--                <div class="team-social">-->
+<!--                  <a href="#"><i class="fab fa-facebook-f"></i></a>-->
+<!--                  <a href="#"><i class="fab fa-linkedin-in"></i></a>-->
+<!--                  <a href="#"><i class="fab fa-twitter"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-6 mb-4 animate-up animate-delay-3">-->
+<!--            <div class="team-card">-->
+<!--              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Phạm Thị D" class="team-img">-->
+<!--              <div class="team-info">-->
+<!--                <h4>Phạm Thị D</h4>-->
+<!--                <p>Chuyên viên hỗ trợ</p>-->
+<!--                <div class="team-social">-->
+<!--                  <a href="#"><i class="fab fa-facebook-f"></i></a>-->
+<!--                  <a href="#"><i class="fab fa-linkedin-in"></i></a>-->
+<!--                  <a href="#"><i class="fab fa-twitter"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
 
     <!-- Core Values -->
     <section class="values-section">
