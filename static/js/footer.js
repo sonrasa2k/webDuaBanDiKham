@@ -69,14 +69,14 @@ export function renderFooter() {
                   <div class="contact-item-footer">
                     <i class="fas fa-map-marker-alt contact-icon"></i>
                     <div class="contact-text-footer">
-                      123 Nguyễn Văn Cừ, Quận 5, TP.HCM
+                      15 Võ Văn Kiệt, Phường Bình Phú,HCM
                     </div>
                   </div>
                   
                   <div class="contact-item-footer">
                     <i class="fas fa-phone-alt contact-icon"></i>
                     <div class="contact-text-footer">
-                      <a href="tel:0123456789">0123 456 789</a>
+                      <a href="tel:+84899692207">+84 899 692 207</a>
                     </div>
                   </div>
                   
