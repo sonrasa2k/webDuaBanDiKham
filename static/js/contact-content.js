@@ -85,13 +85,14 @@ export function renderContactContent() {
     </section>
 
     <section class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.126865816468!2d106.67727731526097!3d10.802837361735947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d4b5e6cb7f%3A0x5e9a5a5a5a5a5a5a!2s123%20Nguy%E1%BB%85n%20V%C4%83n%20C%E1%BB%AB%2C%20Qu%E1%BA%ADn%205%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
-              width="100%" 
-              height="450" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy">
-      </iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.123456789!2d106.6723456!3d10.XXXXXX!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xabcdef1234567890!2s15%20Vo%20Van%20Kiet%2C%20Binh%20Phu%2C%20Quan%208%2C%20HCMC!5e0!3m2!1sen!2s!4v0000000000000"
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+      ></iframe>
     </section>
   `;
 }
