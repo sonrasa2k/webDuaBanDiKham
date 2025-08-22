@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -15,7 +15,7 @@
   object-fit: contain; /* Giữ nguyên tỉ lệ, không crop, không zoom quá */
   transform: translate(-50%, -50%);
   z-index: 0;
-  background: black; /* Đệm nền nếu video không phủ kín */
+  /*background: black; !* Đệm nền nếu video không phủ kín *!*/
 }
 .hero-btn {
   position: absolute;
