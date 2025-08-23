@@ -40,6 +40,7 @@ def send_telegram_message(text: str):
     r.raise_for_status()
 
 def build_tg_text(doc: dict) -> str:
+    vn_tz = pytz.timezone("Asia/Ho_Chi_Minh")
     lines = [
         "🧾 *ĐƠN ĐẶT LỊCH MỚI*",
         f"• Mã đơn: *{doc.get('bookingCode','')}*",
@@ -48,7 +49,7 @@ def build_tg_text(doc: dict) -> str:
         f"• Ngày hẹn: {doc.get('date','')}",
         f"• Dịch vụ: {doc.get('service','')}",
         f"• Vị trí đón: {doc.get('pickup','')}",
-        f"_Tạo lúc: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}_",
+        f"_Tạo lúc: {datetime.now(vn_tz).strftime('%d/%m/%Y %H:%M:%S')}_",
     ]
     return "\n".join(lines)
 
