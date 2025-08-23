@@ -7,6 +7,7 @@ from pymongo.errors import DuplicateKeyError
 from dotenv import load_dotenv
 import requests
 import random
+import pytz
 
 load_dotenv()
 
@@ -75,6 +76,7 @@ def about():
 # ====== Submit booking ======
 @app.route("/submit-booking", methods=["POST"])
 def submit_booking():
+    vn_tz = pytz.timezone("Asia/Ho_Chi_Minh")
     name = request.form.get("name", "").strip()
     phone = request.form.get("phone", "").strip()
     date = request.form.get("date", "").strip()
@@ -104,7 +106,7 @@ def submit_booking():
         "date": date,
         "service": service,
         "pickup": pickup,
-        "createdAt": datetime.utcnow(),
+        "createdAt": datetime.now(vn_tz),
     }
 
     try:
